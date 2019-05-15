@@ -8,10 +8,11 @@
  */
 const verbose = true; // Adds verbosity to functions
 
-const Cyton = require('@openbci/cyton').Cyton;
+const Cyton = require('@openbci/cyton');
 let ourBoard = new Cyton({
   simulatorFirmwareVersion: 'v2',
-  verbose: verbose
+  verbose: verbose,
+  hardSet: true
 });
 
 let sampleRate = 250; // Default to 250, ALWAYS verify with a call to `.sampleRate()` after 'ready' event!

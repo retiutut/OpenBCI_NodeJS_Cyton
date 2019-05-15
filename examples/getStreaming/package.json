@@ -13,6 +13,6 @@
   "author": "AJ Keller",
   "license": "MIT",
   "dependencies": {
-    "openbci": "^2.0.0"
+    "@openbci/cyton": "^2.0.1"
   }
 }

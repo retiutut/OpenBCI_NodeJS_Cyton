@@ -12,7 +12,7 @@
 const debug = false; // Pretty print any bytes in and out... it's amazing...
 const verbose = true; // Adds verbosity to functions
 
-const Cyton = require('../../openBCICyton');
+const Cyton = require("@openbci/cyton");
 let ourBoard = new Cyton({
   boardType: 'daisy',
   debug: debug,

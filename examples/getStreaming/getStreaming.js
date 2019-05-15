@@ -12,7 +12,7 @@
 const debug = false; // Pretty print any bytes in and out... it's amazing...
 const verbose = true; // Adds verbosity to functions
 
-const Cyton = require('../../openBCICyton');
+const Cyton = require("@openbci/cyton");
 let ourBoard = new Cyton({
   debug: debug,
   verbose: verbose
@@ -25,8 +25,8 @@ let ourBoard = new Cyton({
 let portName = '/dev/tty.usbserial-DM00D7TW';
  ourBoard.listPorts()
    .then((ports) => {
-     console.log('ports', JSON.stringify(ports));
-  });
+    console.log('ports', JSON.stringify(ports));
+   });
 
 // You can also pass the port name as a command line argument!
 // i.e. windows
