@@ -22,11 +22,11 @@ let ourBoard = new Cyton({
 //  uncommecnt the listPorts function below to print the serial ports
 //  attached to your computer. You do need to have the FTDI VCP driver
 //  installed.
-let portName = 'COM4';
-// ourBoard.listPorts()
-//   .then((ports) => {
-//     console.log('ports', JSON.stringify(ports));
-//   });
+let portName = '/dev/tty.usbserial-DM00D7TW';
+ ourBoard.listPorts()
+   .then((ports) => {
+     console.log('ports', JSON.stringify(ports));
+  });
 
 // You can also pass the port name as a command line argument!
 // i.e. windows
